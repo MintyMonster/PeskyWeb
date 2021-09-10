@@ -2,34 +2,30 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Required links -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/c3c8755ec5.js" defer crossorigin="anonymous"></script>
-  <script src="./scripts/scripts.js"></script>
+    <!-- Required links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c3c8755ec5.js" defer crossorigin="anonymous"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="./css/imagegrid.css">
+    <title>PeskyPigs</title>
 
-  <link rel="stylesheet" href="./css/custom.css">
-  <link rel="stylesheet" href="./css/slideshow.css">
-  <title>PeskyPigs</title>
-
-  <!-- <body>
+    <!-- <body>
     $(document).ready(function () {
 
       $("#slideshow > div:gt(0)").hide();
@@ -46,83 +42,147 @@
     });
   </script> -->
 </head>
+
 <body>
-
-  <div class="container-fluid top-bar">
-    <div class="row align-self-start">
-      <div class="col-md-5 logo-col">
-        <div class="logo-wrapper">
-          <img
-            src="https://user-images.githubusercontent.com/78669960/132076798-5cd3efbd-3fa2-4823-ab5b-c37bdc896d2d.png"
-            class="logo">
-        </div>
-      </div>
-      <div class="col-md-7 social-col">
-        <div class="nav-wrapper">
-          <div class="row align-self-start socials-wrapper">
-            <div class="col-sm-6">
-              <div class="discord-wrapper nav-item" onclick="goDiscord()">
-                <img src="./assets/discord-vector.svg" alt="Discord" class="discord-logo">
-                <p class="discord-text"></p>
-              </div>
-              <div class="twitter-wrapper nav-item">
-                <img src="./assets/twitter-vector.svg" alt="Twitter" class="twitter-logo">
-                <p class="twitter-text"></p>
-              </div>
-              <div class="opensea-wrapper nav-item">
-                <img src="./assets/opensea_logo_asset.png" alt="Opensea" class="opensea-logo">
-                <p class="opensea-text"></p>
-              </div>
-            </div>
-            <div class="col-sm connect-div nav-item">
-              <div class="connect-wrapper">
-                <p class="connect-text">CONNECT WALLET</p>
-                <img src="./assets/akar-icons_wallet.svg" alt="Wallet" class="connect-wallet">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="mint-title-div">
+        <p class="mint-text-title">MINTING DATE: To be decided</p>
     </div>
-  </div>
-
-
-  <div class="container slideshow-container offset-md-2">
-    <div class="row">
-      <div class="col-md-4 slideshow-wrapper">
-        <div class="slider slideshow">
-          <img src="./assets/placeholders/placeholder_1.png" alt="..." class="slider-image">
-          <img src="./assets/placeholders/placeholder_2.png" alt="..." class="slider-image">
-          <img src="./assets/placeholders/placeholder_3.png" alt="..." class="slider-image">
-      </div>
-      </div>
-      <div class="col-md-6">
-        <div class="slideshow-text-wrapper">
-          <div class="carousel-text-div">
-            <p class="carousel-text">PESKY<br>PIGS</p>
-          </div>
-          <div class="mint-text-amount-div">
-            <p class="mint-text-amount">MINTING DATE: To be decided</p>
-          </div>
-          <div class="mint-div">
-            <div class="mint-wrapper">
-              <p class="mint-text">MINT</p>
-              <i class="fab fa-ethereum" class="mint-ether"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/assets/placeholders/round_logo.png" height="80px" width="80px" alt="Minty"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-2">
+                        <a class="nav-link fw-bold nav-item" href="#"><img src="./assets/discord-vector.svg" alt="Discord" class="discord-logo"> DISCORD</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link fw-bold nav-item" href="#"><img src="./assets/twitter-vector.svg" alt="Twitter" class="twitter-logo"> TWITTER</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold nav-item" href="#"><img src="./assets/opensea_logo_asset.png" alt="Opensea" class="opensea-logo"> OPENSEA</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary fw-bold nav-item">CONNECT WALLET <img src="./assets/akar-icons_wallet.svg" width='21px' height='21px' alt="Wallet" class="connect-wallet"></i></button>
+                        <button type="button" class="btn btn-secondary fw-bold nav-item mint-button-top">MINT <i class="fab fa-ethereum" class="mint-ether"></i></button>
+                    </li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </nav>
 
-  
-<script src="./scripts/slideshow.js"></script>
-<script>
-  let slider = new Slighter(
-    document.querySelector('.slider'), // your slideshow container
-    3000 // frame duration in ms
-);
-</script>
+    <div class="container offset-md-2 slideshow-container">
+        <div class="row">
+            <div class="col-md-4 slideshow-wrap">
+                <div class="slider slideshow">
+                    <img src="./assets/placeholders/placeholder_1.png" alt="..." class="slider-image">
+                    <img src="./assets/placeholders/placeholder_2.png" alt="..." class="slider-image">
+                    <img src="./assets/placeholders/placeholder_3.png" alt="..." class="slider-image">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="slideshow-text-wrap">
+                    <p class="slideshow-text">PESKY<br>PIGS</p>
+                    <div class="mint-text-amount-div">
+                        <p class="mint-text-amount">MINTING DATE: To be decided</p>
+                    </div>
+                    <button type="button" class="btn btn-secondary fw-bold nav-item mint-button-bottom">MINT <i class="fab fa-ethereum" class="mint-ether"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container image-grid-container">
+        <div class="row image-grid-row">
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_0" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_1" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_2" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_3" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+
+        </div>
+        <div class="row image-grid-row">
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_4" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_5" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_6" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_7" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+
+        </div>
+        <div class="row image-grid-row display-none">
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_8" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_9" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_10" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_11" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+
+        </div>
+        <div class="row image-grid-row display-none">
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_12" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_13" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_14" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+            <div class="col-md-6 col-lg-3 col-xs-12 image-grid-col"><div class="gridcontent" id="image_15" data-tilt data-tilt-glare data-tilt-max-glare="0.6"></div></div>
+
+        </div>
+    </div>
+    
+    <!-- Put everything above this ** FOOTER ** -->
+
+    <footer class="d-flex flex-wrap py-2 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex align-items-center">
+                    <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                    </a> -->
+                    <span class="footer-copyright">Copyright &copy; 2021 PeskyPigs | Crafted With <span class='text-danger'>❤</span> by <a class='text-decoration-none footer-link ' href="https://github.com/MintyMonster" >Minty</a></span>
+                </div>
+
+                <ul class="nav col-md-2 ms-auto list-unstyled d-flex">
+                    <li class="ms-3 ">
+                        <a class="text-white discord-footer" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path id='discord' d="M20.317 4.49197C18.787 3.80197 17.147 3.29197 15.432 3.00197C15.4167 2.99904 15.4009 3.00093 15.3868 3.00738C15.3726 3.01383 15.3608 3.02452 15.353 3.03797C15.143 3.40697 14.909 3.88797 14.745 4.26797C12.9261 3.99621 11.0769 3.99621 9.25799 4.26797C9.07533 3.84683 8.86934 3.4362 8.64099 3.03797C8.63325 3.02436 8.62154 3.01342 8.60743 3.00663C8.59331 2.99984 8.57746 2.99752 8.56199 2.99997C6.84799 3.28997 5.20799 3.79997 3.67699 4.49097C3.66382 4.4965 3.65265 4.50592 3.64499 4.51797C0.532992 9.09297 -0.320008 13.555 0.0989923 17.961C0.100158 17.9718 0.103508 17.9822 0.108837 17.9917C0.114167 18.0011 0.121364 18.0094 0.129992 18.016C1.94638 19.3384 3.97233 20.3458 6.12299 20.996C6.13798 21.0006 6.15402 21.0006 6.16901 20.9959C6.18399 20.9913 6.19723 20.9823 6.20699 20.97C6.66899 20.35 7.08099 19.695 7.43299 19.007C7.45399 18.967 7.43399 18.919 7.39199 18.903C6.746 18.6597 6.12008 18.3661 5.51999 18.025C5.50921 18.0188 5.50012 18.0101 5.49355 17.9995C5.48698 17.989 5.48312 17.977 5.48233 17.9646C5.48153 17.9522 5.48383 17.9398 5.48901 17.9286C5.49418 17.9173 5.50208 17.9075 5.51199 17.9C5.63799 17.807 5.76399 17.71 5.88399 17.613C5.89479 17.6043 5.9078 17.5987 5.92158 17.5969C5.93535 17.5952 5.94934 17.5973 5.96199 17.603C9.88899 19.367 14.142 19.367 18.023 17.603C18.0357 17.5969 18.0498 17.5946 18.0638 17.5961C18.0778 17.5977 18.091 17.6032 18.102 17.612C18.222 17.71 18.347 17.807 18.474 17.9C18.484 17.9073 18.492 17.917 18.4974 17.9282C18.5027 17.9394 18.5052 17.9517 18.5046 17.9641C18.504 17.9765 18.5004 17.9885 18.494 17.9991C18.4876 18.0098 18.4787 18.0186 18.468 18.025C17.87 18.369 17.248 18.66 16.595 18.902C16.585 18.9056 16.5758 18.9114 16.5682 18.9188C16.5606 18.9263 16.5546 18.9353 16.5507 18.9452C16.5468 18.9551 16.5451 18.9658 16.5457 18.9764C16.5463 18.9871 16.5491 18.9975 16.554 19.007C16.914 19.694 17.326 20.348 17.779 20.969C17.7884 20.9817 17.8015 20.9912 17.8166 20.9963C17.8316 21.0013 17.8478 21.0015 17.863 20.997C20.0173 20.3486 22.0466 19.3407 23.865 18.016C23.8739 18.0098 23.8813 18.0017 23.8868 17.9924C23.8923 17.9831 23.8958 17.9727 23.897 17.962C24.397 12.868 23.059 8.44197 20.348 4.51997C20.3413 4.50723 20.3303 4.49729 20.317 4.49197ZM8.01999 15.278C6.83799 15.278 5.86299 14.209 5.86299 12.898C5.86299 11.586 6.81899 10.518 8.01999 10.518C9.22999 10.518 10.196 11.595 10.177 12.898C10.177 14.21 9.22099 15.278 8.01999 15.278V15.278ZM15.995 15.278C14.812 15.278 13.838 14.209 13.838 12.898C13.838 11.586 14.793 10.518 15.995 10.518C17.205 10.518 18.171 11.595 18.152 12.898C18.152 14.21 17.206 15.278 15.995 15.278V15.278Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-muted twitter-footer" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="twitter" d="M23.643 4.93702C22.808 5.30702 21.911 5.55702 20.968 5.67002C21.941 5.08781 22.669 4.17148 23.016 3.09202C22.1019 3.63501 21.1014 4.01721 20.058 4.22202C19.3564 3.47288 18.4271 2.97634 17.4143 2.80949C16.4016 2.64264 15.3621 2.81481 14.4572 3.29927C13.5524 3.78373 12.8328 4.55338 12.4102 5.48872C11.9875 6.42406 11.8855 7.47277 12.12 8.47202C10.2677 8.37901 8.45564 7.89757 6.80144 7.05892C5.14723 6.22028 3.68785 5.04318 2.51801 3.60402C2.11801 4.29402 1.88801 5.09402 1.88801 5.94602C1.88757 6.71301 2.07644 7.46826 2.43789 8.14475C2.79934 8.82124 3.32217 9.39805 3.96001 9.82402C3.22029 9.80048 2.49688 9.6006 1.85001 9.24102V9.30102C1.84994 10.3768 2.22204 11.4194 2.90319 12.252C3.58434 13.0846 4.53258 13.6559 5.58701 13.869C4.9008 14.0547 4.18135 14.0821 3.48301 13.949C3.78051 14.8746 4.36001 15.684 5.14038 16.2639C5.92075 16.8438 6.86293 17.1652 7.83501 17.183C6.18485 18.4784 4.1469 19.1811 2.04901 19.178C1.67739 19.1781 1.30609 19.1564 0.937012 19.113C3.06649 20.4822 5.54535 21.2088 8.07701 21.206C16.647 21.206 21.332 14.108 21.332 7.95202C21.332 7.75202 21.327 7.55002 21.318 7.35002C22.2293 6.69099 23.0159 5.87491 23.641 4.94002L23.643 4.93702V4.93702Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-muted opensea-footer" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="opensea" d="M12 0C5.3736 0 0 5.3736 0 12C0 18.6264 5.3736 24 12 24C18.6264 24 24 18.6264 24 12C24 5.3736 18.6288 0 12 0ZM5.9208 12.4032L5.9712 12.3216L9.0936 7.4376C9.1392 7.368 9.2472 7.3752 9.2808 7.452C9.8016 8.6208 10.2528 10.0752 10.0416 10.98C9.9528 11.352 9.7056 11.856 9.4272 12.3216C9.3912 12.3888 9.3528 12.456 9.3096 12.5208C9.2904 12.5496 9.2568 12.5664 9.2208 12.5664H6.012C5.9256 12.5664 5.8752 12.4728 5.9208 12.4032ZM19.8336 14.0832C19.8336 14.1288 19.8072 14.1672 19.7688 14.184C19.5264 14.2872 18.6984 14.6688 18.3552 15.1464C17.4768 16.368 16.8072 18.1152 15.3072 18.1152H9.0528C6.8352 18.1152 5.04 16.3128 5.04 14.088V14.016C5.04 13.9584 5.088 13.9104 5.148 13.9104H8.6328C8.7024 13.9104 8.7528 13.9728 8.748 14.0424C8.7216 14.268 8.7648 14.5008 8.8728 14.712C9.0792 15.132 9.5088 15.3936 9.972 15.3936H11.6976V14.0472H9.9912C9.9048 14.0472 9.852 13.9464 9.9024 13.8744C9.9216 13.8456 9.9408 13.8168 9.9648 13.7832C10.1256 13.5528 10.356 13.1976 10.5864 12.792C10.7424 12.5184 10.8936 12.2256 11.016 11.9328C11.04 11.88 11.0592 11.8248 11.0808 11.772C11.1144 11.6784 11.148 11.5896 11.172 11.5032C11.196 11.4288 11.2176 11.352 11.2368 11.28C11.2944 11.0304 11.3184 10.7664 11.3184 10.4928C11.3184 10.3848 11.3136 10.272 11.304 10.1664C11.2992 10.0488 11.2848 9.9312 11.2704 9.8136C11.2608 9.7104 11.2416 9.6072 11.2224 9.5016C11.196 9.3456 11.1624 9.1896 11.124 9.0336L11.1096 8.9736C11.0808 8.8656 11.0544 8.7648 11.0208 8.6568C10.9224 8.3208 10.812 7.992 10.692 7.6848C10.6488 7.5624 10.6008 7.4448 10.5504 7.3296C10.4784 7.152 10.404 6.9912 10.3368 6.84C10.3008 6.7704 10.272 6.708 10.2432 6.6432C10.2096 6.5712 10.176 6.4992 10.14 6.4296C10.116 6.3768 10.0872 6.3264 10.068 6.2784L9.8568 5.8896C9.828 5.8368 9.876 5.772 9.9336 5.7888L11.2536 6.1464H11.2584C11.2608 6.1464 11.2608 6.1464 11.2632 6.1464L11.436 6.1968L11.628 6.2496L11.6976 6.2688V5.4864C11.6976 5.1072 12 4.8 12.3768 4.8C12.564 4.8 12.7344 4.8768 12.8544 5.0016C12.9768 5.1264 13.0536 5.2968 13.0536 5.4864V6.6504L13.1952 6.6888C13.2048 6.6936 13.2168 6.6984 13.2264 6.7056C13.26 6.7296 13.3104 6.768 13.3728 6.816C13.4232 6.8544 13.476 6.9024 13.5384 6.9528C13.6656 7.056 13.8192 7.188 13.9848 7.3392C14.028 7.3776 14.0712 7.416 14.112 7.4568C14.3256 7.656 14.5656 7.8888 14.796 8.148C14.8608 8.2224 14.9232 8.2944 14.988 8.3736C15.0504 8.4528 15.12 8.5296 15.1776 8.6064C15.2568 8.7096 15.3384 8.8176 15.4128 8.9304C15.4464 8.9832 15.4872 9.0384 15.5184 9.0912C15.6144 9.2328 15.696 9.3792 15.7752 9.5256C15.8088 9.5928 15.8424 9.6672 15.8712 9.7392C15.96 9.936 16.0296 10.1352 16.0728 10.3368C16.0872 10.38 16.0968 10.4256 16.1016 10.4688V10.4784C16.116 10.536 16.1208 10.5984 16.1256 10.6632C16.1448 10.8672 16.1352 11.0736 16.092 11.28C16.0728 11.3664 16.0488 11.448 16.02 11.5368C15.9888 11.6208 15.96 11.7072 15.9216 11.7912C15.8472 11.9616 15.7608 12.1344 15.6576 12.2928C15.624 12.3528 15.5832 12.4152 15.5448 12.4752C15.5016 12.5376 15.456 12.5976 15.4176 12.6552C15.3624 12.7296 15.3048 12.8064 15.2448 12.876C15.192 12.948 15.1392 13.02 15.0792 13.0848C14.9976 13.1832 14.9184 13.2744 14.8344 13.3632C14.7864 13.4208 14.7336 13.4808 14.6784 13.5336C14.6256 13.5936 14.5704 13.6464 14.5224 13.6944C14.4384 13.7784 14.3712 13.8408 14.3136 13.896L14.1768 14.0184C14.1576 14.0376 14.1312 14.0472 14.1048 14.0472H13.0536V15.3936H14.376C14.6712 15.3936 14.952 15.2904 15.18 15.096C15.2568 15.0288 15.5952 14.736 15.996 14.2944C16.0104 14.2776 16.0272 14.268 16.0464 14.2632L19.6968 13.2072C19.7664 13.188 19.8336 13.2384 19.8336 13.3104V14.0832Z" fill="black"/>
+                                </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/slideshow.js"></script>
+    <script>
+        let slider = new Slighter(
+            document.querySelector('.slider'), // your slideshow container
+            3000 // frame duration in ms
+        );
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+    <script src="./scripts/images.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/tilt.js"></script>
 </body>
 
 </html>

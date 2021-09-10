@@ -1,34 +1,29 @@
 .slider {
     position: relative;
-    height: 40vh;
+    height: 480px;
     transition: 0.6s;
-    overflow: hidden;
-  }
-  .slider > * {
+}
+
+.slider>* {
     opacity: 0;
     z-index: 3;
     position: absolute;
     max-width: 90%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 25px;
-  }
+    object-fit: contain;   
+    box-shadow: 6px 8px rgba(50, 47, 47, 0.4);
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+}
 
-  .slider:hover {
-    transform: scale(1.15);
-    transition: 0.6s;
-  }
-
-
-  .current {
+.current {
     opacity: 1;
     z-index: 2;
-  }
-  
-  .previous {
+}
+
+.previous {
     z-index: 3;
     transition-property: opacity;
     transition-duration: 1s;
     transition-timing-function: ease;
-  }
-  
+}
