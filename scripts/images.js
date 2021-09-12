@@ -34,10 +34,11 @@ setInterval(() => {
         
         }else{
 
-            $("#image_" + elementId).fadeOut(function(){
-                $("#image_" + elementId).css("background-image", "url(https://images.placeholders.dev/?width=200&bgColor=%23313131&height=200&text=" + newRandom + ")");
-                $("#image_" + elementId).fadeIn(1500);
-            })
+            $("#image_" + elementId).fadeOut(1000); // Fade image out
+            setTimeout(() => { // Wait X seconds to allow for image to fully fade
+                $("#image_" + elementId).css("background-image", "url(https://images.placeholders.dev/?width=200&bgColor=%23313131&height=200&text=" + newRandom + ")"); // Set image
+                $("#image_" + elementId).fadeIn(1000); // Fade image in
+            }, 1000); 
         }
     
     }

@@ -65,7 +65,8 @@
                         <a class="nav-link fw-bold nav-item" href="#"><img src="./assets/opensea_logo_asset.png" alt="Opensea" class="opensea-logo"> OPENSEA</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-secondary fw-bold nav-item">CONNECT WALLET <img src="./assets/akar-icons_wallet.svg" width='21px' height='21px' alt="Wallet" class="connect-wallet"></i></button>
+                        <button type="button" class="btn btn-secondary fw-bold nav-item" id="connect-btn">CONNECT WALLET <img src="./assets/akar-icons_wallet.svg" width='21px' height='21px' alt="Wallet" class="connect-wallet"></i></button>
+                        <button type="button" class="btn btn-secondary fw-bold nav-item" id="disconnect-btn" hidden>DISCONNECT WALLET <img src="./assets/akar-icons_wallet.svg" width='21px' height='21px' alt="Wallet" class="connect-wallet"></i></button>
                         <button type="button" class="btn btn-secondary fw-bold nav-item mint-button-top">MINT <i class="fab fa-ethereum" class="mint-ether"></i></button>
                     </li>
                 </ul>
@@ -180,6 +181,13 @@
         );
     </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.2.1/dist/umd/index.min.js"></script> 
+
+    <script src="./scripts/modal.js"></script>
     <script src="./scripts/images.js"></script>
     <script src="./scripts/scripts.js"></script>
     <script src="./scripts/tilt.js"></script>
